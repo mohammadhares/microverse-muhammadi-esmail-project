@@ -8,30 +8,86 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
 #main-doc{
     width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
-#main-doc div{
-    display: block;
-}
 
-#main-doc .main-section{
-    position: absolute;
+
+#main-doc #navbar{
+    position: fixed;
     left: 0;
     top: 0;
-    border: 1px solid red;
-    width: 20%;
-    height: 800px;
+    width: 15%;
     margin: auto;
+    border-right: 2px solid #777;
 }
 
 #main-doc .content{
-    width: 80%;
-    height: 800px;
+    width: 85%;
     margin: auto;
-    border: 1px solid blue;
+    padding: 40px;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: auto;
 }
 
+
+
+#navbar header{
+    text-align: center;
+    font-size: 25px;
+    color: #444;
+    padding: 20px;
+}
+
+#navbar ul{
+    list-style: none;
+    overflow: hidden;
+    height: 97vh;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #777;
+    font-size: 18px;
+    display: block;
+    padding: 15px 0;
+    padding-left: 10px;
+}
+
+#navbar ul li{
+    border-bottom: 1px solid #444;
+    border-top: 1px solid #444;
+}
+
+.content .main-section{
+    width: 85%;
+    float: right;
+    padding: 50px;
+    color: #555;
+}
+
+.main-section h1{
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.main-section p{
+    line-height: 2;
+    padding: 10px;
+}
+
+.main-section ul li{
+    margin-left: 70px;
+}
 
     
